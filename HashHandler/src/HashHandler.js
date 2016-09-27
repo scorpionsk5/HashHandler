@@ -17,7 +17,7 @@
                     window.onhashchange = triggerHandlers;
                 }
                 else {
-
+                    // TODO: Non-supported browser implementation.
                 }
             },
 
@@ -32,6 +32,10 @@
                 if (index > -1) {
                     registeredListeners.splice(index, 1);
                 }
+            },
+
+            reset: function () {
+                registeredListeners = [];
             }
         });
 })(window);
