@@ -11,7 +11,7 @@
             });
         },
 
-        HashHandler = Object.create({
+        hashHandler = Object.create({
             start: function () {
                 if (typeof window.onhashchange === 'object') {
                     window.onhashchange = triggerHandlers;
@@ -38,4 +38,12 @@
                 registeredListeners = [];
             }
         });
+
+    // Export Router class.
+    if (define && (typeof define === 'function') && define.amd) {
+        define('hashHandler', function () { return hashHandler; })
+    }
+    else {
+        window.hashHandler = hashHandler;
+    };
 })(window);
