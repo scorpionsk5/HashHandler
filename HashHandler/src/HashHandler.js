@@ -39,7 +39,7 @@
             }
         });
 
-    // Export Router class.
+    // Export hashHandler.
     if (define && (typeof define === 'function') && define.amd) {
         define('hashHandler', function () { return hashHandler; })
     }
