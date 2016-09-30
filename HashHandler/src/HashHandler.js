@@ -82,7 +82,7 @@
                 addHandler: function (handler) {
                     if (findIndex(handler, 'changed') == -1) {
                         registeredHandlers['changed'].push(handler);
-                    }
+                    };
                 },
 
                 // Method to remove handler for changed event.
@@ -90,7 +90,7 @@
                     var index = findIndex(handler, 'changed');
                     if (index > -1) {
                         registeredHandlers['changed'].splice(index, 1);
-                    }
+                    };
                 },
             },
 
@@ -100,7 +100,7 @@
                 addHandler: function (handler) {
                     if (findIndex(handler, 'preChange') == -1) {
                         registeredHandlers['preChange'].push(handler);
-                    }
+                    };
                 },
 
                 // Method to remove handler for preChange event.
@@ -108,7 +108,7 @@
                     var index = findIndex(handler, 'preChange');
                     if (index > -1) {
                         registeredHandlers['preChange'].splice(index, 1);
-                    }
+                    };
                 },
             },
 
@@ -129,14 +129,14 @@
 
             // Method to set hash value.
             setHash: function (hash) {
-                triggerHandlers.call(this, 'preChange')
+                triggerHandlers.call(this, 'preChange');
                 window.document.location.hash = hash;
             }
         });
 
     // Export hashHandler.
     if (define && (typeof define === 'function') && define.amd) {
-        define('hashHandler', function () { return hashHandler; })
+        define('hashHandler', function () { return hashHandler; });
     }
     else {
         window.hashHandler = hashHandler;
