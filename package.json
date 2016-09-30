@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/scorpionsk5/HashHandler/issues"
   },
-  "homepage": "https://github.com/scorpionsk5/HashHandler#readme"
+  "homepage": "https://github.com/scorpionsk5/HashHandler#readme",
+  "dependencies": {
+    "minify": "^2.0.11"
+  }
 }

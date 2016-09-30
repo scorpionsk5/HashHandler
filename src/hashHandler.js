@@ -1,4 +1,4 @@
-﻿(function (window, define) {
+﻿(function (window) {
 
     // Variable to store previous hash value.
     var prevHash = '',
@@ -135,6 +135,7 @@
         });
 
     // Export hashHandler.
+    var define = window.define;
     if (define && (typeof define === 'function') && define.amd) {
         define('hashHandler', function () { return hashHandler; });
     }
@@ -142,4 +143,4 @@
         window.hashHandler = hashHandler;
     };
 
-})(window, define);
+})(window);
