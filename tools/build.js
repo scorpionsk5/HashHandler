@@ -6,7 +6,7 @@
         if (error)
             console.error(error.message);
         else {
-            fs.writeFile('finalBuild/hashHandler.min.js', data, function (err, fileRef) {
+            fs.writeFile('build/hashHandler.min.js', data, function (err, fileRef) {
                 if (err) {
                     console.log(err);
                 }
