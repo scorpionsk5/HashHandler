@@ -1,0 +1,19 @@
+{
+  "name": "hashhandler",
+  "version": "1.0.0",
+  "description": "Module to handle hash value in url for navigation.",
+  "main": "tools\\build.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scorpionsk5/HashHandler.git"
+  },
+  "author": "Shashi Kumar",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/scorpionsk5/HashHandler/issues"
+  },
+  "homepage": "https://github.com/scorpionsk5/HashHandler#readme"
+}
